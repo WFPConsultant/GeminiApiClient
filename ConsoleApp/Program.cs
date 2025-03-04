@@ -28,7 +28,7 @@ public class Program
         static async Task Main(string[] args)
         {
             // You can pass the necessary parameters or use default values
-            string projectId = "jamil-333509";
+            string projectId = "<your project id>";
             string location = "us-central1"; //"europe-west1";//
         string publisher = "google";
             string model = "gemini-1.0-pro-vision"; //"gemini-1.0-pro";//
@@ -56,7 +56,7 @@ public class Program
             var predictionServiceClient = new PredictionServiceClientBuilder
             {
                 Endpoint = $"{location}-aiplatform.googleapis.com",
-                CredentialsPath = "C:\\Practice\\ConsoleApp\\ConsoleApp\\jamil-333509-79e1010668e1.json" // Replace with the actual path
+                CredentialsPath = "C:\\Practice\\ConsoleApp\\ConsoleApp\\account-secret.json" // Replace with the actual path
             }.Build();
 
             // Prompt
